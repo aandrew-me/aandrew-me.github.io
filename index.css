@@ -1,0 +1,282 @@
+@charset "UTF-8";
+html{
+  cursor: url("images/cursor.png"), auto;
+}
+video#bgVideo {
+  position: fixed; 
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+ }
+#header{
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 2px 2px;
+  font-family:Century Gothic;
+  font-size: 350%;
+  text-shadow:1px solid white;
+  
+}
+ul{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    display:flex;
+    flex-wrap: wrap;
+
+    
+}
+li{
+    float:left;
+    
+}
+li a{
+    display: inline-block;
+  color: rgb(2, 0, 20);
+  text-align: center;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size:100%;
+  font-family:Century Gothic;
+  border:1px solid black;
+  border-radius:10px;
+  background-color:rgb(228, 222, 222);
+  cursor:pointer;
+
+ } 
+ li a:hover{
+  animation-name:hoverdance;
+  animation-duration:.5s;
+  animation-iteration-count:1;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+ }
+ @keyframes hoverdance{
+   
+  100% {border:1px solid rgb(255, 182, 45);
+        background-color: rgb(212, 207, 199);
+        border-radius:15px;}
+  
+ }
+  
+
+.quote {
+  display: inline-block;
+  margin: 1em;
+  overflow: hidden;
+}
+.quote blockquote {
+  background-color: #fff;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.quote blockquote:before {
+  background-color: #fff;
+  bottom: -10%;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  transform: rotate(-15deg) skew(5deg);
+}
+.quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+.quote blockquote cite:before {
+  content: "- ";
+}
+.quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
+.animated-border-quote {
+  display: inline-block;
+  margin: 1em;
+  max-width: 20em;
+  overflow: hidden;
+}
+.animated-border-quote blockquote {
+  background-color: #fff;
+  border: solid 2px #757575;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.animated-border-quote blockquote:before {
+  animation: clockwise 30s infinite linear;
+  background-color: #fff;
+  bottom: 10%;
+  content: "";
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.animated-border-quote blockquote:after {
+  animation: counter 30s infinite linear;
+  background-color: #fff;
+  bottom: 10%;
+  content: "";
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 10%;
+}
+.animated-border-quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+.animated-border-quote blockquote cite:before {
+  content: "- ";
+}
+.animated-border-quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes clockwise {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes counter {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+.animated-shadow-quote {
+  display: inline-block;
+  margin: 1em;
+  max-width: 20em;
+  position: relative;
+  background-color: snow;
+}
+.animated-shadow-quote blockquote {
+  animation: shadows 2s linear infinite alternate;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+}
+.animated-shadow-quote blockquote cite {
+  display: block;
+  font-style: italic;
+  text-align: right;
+}
+.animated-shadow-quote blockquote cite:before {
+  content: "- ";
+}
+
+@keyframes shadows {
+  0% {
+    box-shadow: 0 2px 4px -2px rgba(0, 0, 0, 0.25);
+    transform: scale(0.95);
+  }
+  100% {
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.25);
+    transform: scale(1);
+  }
+}
+.square-brackets-quote {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 1em;
+  max-width: 20em;
+}
+.square-brackets-quote blockquote {
+  border: solid 1em #ccc;
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.square-brackets-quote blockquote:before {
+  background-color: #fff;
+  bottom: -1em;
+  content: "";
+  left: 2em;
+  position: absolute;
+  right: 2em;
+  top: -1em;
+}
+.square-brackets-quote blockquote cite {
+  color: #757575;
+  display: block;
+  font-size: small;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
+.square-brackets-quote blockquote > * {
+  position: relative;
+  z-index: 1;
+}
+
+.giant-quotes-quote {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 1em;
+  max-width: 20em;
+  background-color: rgb(247, 247, 247);
+}
+.giant-quotes-quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 1em;
+  position: relative;
+}
+.giant-quotes-quote blockquote:before {
+  color: #f90;
+  content: "“";
+  font-size: 4em;
+  left: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+.giant-quotes-quote blockquote:after {
+  color: #f90;
+  content: "”";
+  font-size: 4em;
+  line-height: 0.75em;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+.giant-quotes-quote blockquote > * {
+  padding: 0 2em;
+}
+.giant-quotes-quote blockquote cite {
+  color: #c60;
+  display: block;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
+@media screen and (max-width:550px){
+  li a{ font-size:75%;}
+}

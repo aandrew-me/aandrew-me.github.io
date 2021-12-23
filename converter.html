@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="converter.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/converter.ico">
+</head>
+<body class="dark-bg" id="theme">
+
+    <!-- Light/Dark mode toggle -->
+    <p id="light-switch" class="dark-mode" onclick="lightSwitch()">Dark Mode</p>
+
+    <!-- Base Converter Container -->
+    <div class="container-dark" id="container">
+
+        <h1>Base Converter</h1>
+
+        <button onclick="clearText()" class="clear">Clear</button>
+
+        <!-- Decimal -->
+        <div class="together">
+            <label for="decimal">
+                <p class="base-prefix">Decimal (Base 10)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>   
+                <input class="input" type="number" placeholder="Decimal value" id="decimal" onkeyup="decitoall()" name="decimal">
+            </label>
+            <p id="copy1" class="copy-dark" onclick="copied(), copy1()">Copy</p>
+        </div>
+
+        <!-- Binary -->
+        <div class="together">
+            <label for="binary">
+                
+               <p class="base-prefix">Binary (Base 2)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                <input class="input" type="number" placeholder="Binary value" id="binary" name="binary" onkeyup="bintoall()">
+            </label>
+            <p id="copy2" onclick="copied(),copy2()" id="copy" class="copy-dark">Copy</p>
+        </div>
+
+        <!-- Octal -->
+        <div class="together">
+            <label for="octal">
+                <p class="base-prefix">Octal (Base 8)&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                <input class="input" type="number" placeholder="Octal value" id="octal" name="octal" onkeyup="octtoall()">
+            </label>
+            <p id="copy3" onclick="copied(),copy3()" id="copy" class="copy-dark" onclick="copy()">Copy</p>
+        </div>
+
+        <!-- Hexadecimal -->
+        <div class="together">
+            <label for="hex">
+                <p class="base-prefix">Hexadecimal (Base 16)&#160;&#160;&#160;&#160;&#160;&#160;&#160;</p>
+                <input class="input" type="text" name="hex" id="hex" placeholder="Hex value" onkeyup="hextoall()">
+            </label>
+            <p id="copy4" onclick="copied(),copy4()" id="copy" class="copy-dark">Copy</p>
+        </div>
+
+    </div>
+
+    <!-- Copied event -->
+    <p id="copied" class="copied-hidden">Copied</p>
+
+    <script src="converter.js"></script>
+</body>
+</html>

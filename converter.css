@@ -1,0 +1,176 @@
+/* ############### */
+/*   Background    */
+/* ############### */
+
+.dark-bg{
+    background-color: #222;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.light-bg{
+    background-color: #E4EBF5;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.clear{
+    align-self: flex-end;
+    color: white;
+    border: white;
+    margin: 0 15px 0 0;
+    background-color: rgb(179, 59, 44);
+    padding: 7px 8px;
+    border-radius: 2px;
+}
+.clear:active{
+    background-color: rgb(114, 60, 54);
+}
+
+#light-switch{
+    display: inline-block;
+    padding: 9px;
+    border-radius: 5px;
+}
+#light-switch:active, #light-switch:hover{
+    cursor: pointer;
+}
+
+/* ############### */
+/* Switch Modes    */
+/* ############### */
+
+.light-mode{
+ background-color: rgb(42, 60, 75);
+ color: rgb(228, 224, 224);
+}
+
+.dark-mode{
+    background-color: rgb(205, 214, 214);
+    color: rgb(53, 43, 43);
+}
+
+
+#container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin: 5% 15% 5% 15%;
+
+    border-radius: 20px;
+    font-size: larger;
+}
+
+/* ################## */
+/* Container color */
+/* ################## */
+
+.container-dark{
+    background-color: #303030;
+    color: rgb(231, 230, 230);
+}
+.container-light{
+    background-color: #E4EBF5;
+    color:rgb(31, 29, 29);
+    box-shadow: 5px 5px 10px gray, 3px 3px 4px white, inset -3px -3px 5px white, -2px -2px 5px gray, -3px -3px 4px white, inset 3px 3px 5px white;
+}
+
+
+h1{
+    margin-bottom: 8%;
+}
+.together{
+    padding: 0px 15px 15px 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+/* COPY */
+
+#copy1, #copy2, #copy3, #copy4{
+    align-self: flex-end;
+    padding: 5px 7px 7px 7px;
+    border-radius: 6px;
+    font-size: small;
+}
+
+/* ############## */
+/* Copy color */
+/* ############## */
+
+.copy-light{
+    background-color: rgb(117, 116, 99);
+    color: white;
+}
+.copy-dark{
+    background-color: rgb(73, 64, 64);
+    color: white;
+}
+#copy1,#copy2,#copy3,#copy4:hover{
+    cursor: pointer;
+    
+}
+#copy1:active,#copy2:active,#copy3:active,#copy4:active{
+    cursor:pointer;
+    background-color: rgb(189, 123, 123);
+    animation: copied;
+    animation-duration: 4s;
+
+}
+
+@keyframes copied {
+
+    0% {visibility: hidden}
+    50% {visibility: visible}
+    100% {visibility: hidden}
+}
+
+/* COPIED */
+
+#copied{
+    display: inline;
+    position: sticky;
+    bottom: 92%;
+    left: 90%;
+    background-color: rgb(126, 71, 71);
+    color: white;
+    padding: 10px 35px 15px 30px;
+    border-radius: 5px;
+    margin: auto 0;
+}
+.copied-visible{
+    visibility: visible;
+}
+.copied-hidden{
+    visibility: hidden;
+}
+
+.input{
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 88%;
+}
+.input-error{
+    padding: 15px;
+    margin: 15px;
+    border-radius: 15px;
+    border: 1px solid black;
+    width: 88%;
+    background-color: rgb(252, 188, 188);
+}
+
+input:focus{
+    outline: none;
+    border: 3px solid rgb(51, 48, 240);
+    border-radius: 15px;
+}
+.base-prefix{
+    display: inline;
+}
+
+@media screen and (max-width: 650px){
+ #container
+    {font-size: large;
+    margin: 5px;
+}
+}

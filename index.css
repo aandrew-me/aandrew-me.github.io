@@ -14,7 +14,7 @@ html {
 	padding: 2px 2px;
 	font-family: Century Gothic;
 	font-size: 350%;
-	text-shadow: 1px solid white;
+	text-shadow: 3px 3px 4px gray;
 }
 ul {
 	list-style-type: none;
@@ -63,6 +63,7 @@ li a:active {
 	display: inline-block;
 	margin: 1em;
 	overflow: hidden;
+  box-shadow: 3px 3px 15px gray;
 }
 .quote blockquote {
 	background-color: #fff;
@@ -71,6 +72,8 @@ li a:active {
 	margin: 0;
 	padding: 1em;
 	position: relative;
+  box-shadow: 3px 3px 15px gray;
+
 }
 .quote blockquote:before {
 	background-color: #fff;
@@ -100,6 +103,8 @@ li a:active {
 	margin: 1em;
 	max-width: 20em;
 	overflow: hidden;
+  box-shadow: 3px 3px 15px gray;
+
 }
 .animated-border-quote blockquote {
 	background-color: #fff;
@@ -166,6 +171,8 @@ li a:active {
 	max-width: 20em;
 	position: relative;
 	background-color: snow;
+  box-shadow: 3px 3px 15px gray;
+
 }
 .animated-shadow-quote blockquote {
 	animation: shadows 2s linear infinite alternate;
@@ -197,6 +204,8 @@ li a:active {
 	font-family: sans-serif;
 	margin: 1em;
 	max-width: 20em;
+  box-shadow: 3px 3px 15px gray;
+
 }
 .square-brackets-quote blockquote {
 	border: solid 1em #ccc;
@@ -233,6 +242,8 @@ li a:active {
 	margin: 1em;
 	max-width: 20em;
 	background-color: rgb(247, 247, 247);
+  box-shadow: 3px 3px 15px gray;
+
 }
 .giant-quotes-quote blockquote {
 	display: inline-block;

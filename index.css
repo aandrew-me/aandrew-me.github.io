@@ -13,7 +13,7 @@ html {
 	color: rgb(24, 23, 23);
 	text-align: center;
 	padding: 2px 2px;
-	font-family: Georgia;
+	font-family: Georgia, 'Times New Roman', Times, serif;
 	font-size: 350%;
 	text-shadow: 3px 3px 4px gray;
 	font-weight: normal;

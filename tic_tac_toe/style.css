@@ -4,9 +4,6 @@ html{
 	text-shadow: -2px -2px 4px rgb(170, 92, 92), 2px 2px 4px rgb(179, 1, 1);
 	background-color: black;
 }
-html:hover{
-	cursor:pointer;
-}
 body{
 	margin:0;
 }

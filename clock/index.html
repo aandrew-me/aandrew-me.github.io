@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title>Clock</title>
+        <link rel="stylesheet" href="clock.css">
+        <meta name="viewport" content="width=device-width, initial-scale=0.8">
+        <meta name="description" content="Just a simple clock...">
+        <meta charset="utf-8">
+        <meta property="og:type" content="website" />
+    <meta property="og:title" content="Just a simple clock.." />
+	</head>
+	<body>
+		<p id="back"><a href="/index.html">Go back</a></p>
+		<p id="name">Hello, Name!</p>
+		
+		<div id="clock">
+		    <p id="hour"></p>
+		    <div id="minute"></div>
+		    <div id="second"></div>
+		    
+		</div>
+		
+		<script>
+		var name =prompt("Hello, What is your name?");
+	    document.getElementById("name").innerHTML="Hello "+" "+name+" !";
+	function playtime(){	
+	    
+		
+		var date = new Date();
+		var hours = date.getHours();
+		var mns = date.getMinutes();
+		var secs = date.getSeconds();
+
+		if(hours>12){
+			hours-=12;
+			document.getElementById("hour").innerHTML="0"+hours+" :";
+		}
+		else{		
+		document.getElementById("hour").innerHTML=hours+" :";
+		}
+		if(mns<10){
+			document.getElementById("minute").innerHTML="0"+mns+" :";	
+		}
+		else{
+		document.getElementById("minute").innerHTML=mns+":";}
+
+		if(secs<10){
+			document.getElementById("second").innerHTML=" 0"+secs;	
+		}
+		else{
+		document.getElementById("second").innerHTML=" "+secs;
+		}
+		
+		
+}
+setInterval(playtime,100);
+		    
+		</script>
+
+
+		
+	</body>
+
+</html>

@@ -1,0 +1,83 @@
+body {
+	background-color: #32dc90;
+	background-image: linear-gradient(66deg, #32dc90 25%, #74c4d6 77%);
+	background-repeat: no-repeat;
+}
+h1 {
+	font-size: 50px;
+	font-family: century gothic;
+	color: rgb(252, 252, 252);
+	animation-name: header;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	text-align: center;
+	padding: 40px 0 90px 0;
+	text-shadow: 4px 4px 5px white;
+}
+@keyframes header {
+	0% {
+		color: red;
+	}
+	25% {
+		color: rgb(212, 140, 6);
+	}
+	50% {
+		color: rgb(0, 214, 36);
+	}
+	75% {
+		color: rgb(8, 152, 209);
+	}
+	100% {
+		color: red;
+	}
+}
+#back {
+	font-size: large;
+	color: rgb(224, 228, 233);
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 10px;
+	text-decoration: none;
+	padding: 5px;
+}
+#back:visited {
+	color: rgb(224, 228, 233);
+}
+#back:hover {
+	color: rgb(0, 0, 0);
+	background-color: white;
+	filter: opacity(0.8);
+	border: 1px solid gray;
+}
+
+/* Gallery part */
+
+.gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.photo {
+	display: block;
+	padding: 5px;
+	width: 98%;
+	overflow: hidden;
+}
+.pics {
+	width: 100%;
+	height: auto;
+	transition: transform 400ms ease-out;
+}
+.pics:hover {
+	transform: scale(1.15);
+	filter: contrast(1.05);
+}
+@media screen and (min-width: 650px) {
+	.photo {
+		width: 40%;
+		padding: 15px;
+		height: auto;
+	}
+}

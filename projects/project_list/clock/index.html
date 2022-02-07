@@ -10,58 +10,21 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Just a simple clock.." />
 	<link rel="shortcut icon" href="/projects/project_images/clock.png" type="image/x-icon">
+	<script src="script.js" defer></script>
 </head>
 
 <body>
-	<p id="back"><a href="/projects/#tic_tac_toe">Go back</a></p>
-	<p id="name">Hello, Name!</p>
+	<a href="/projects/#tic_tac_toe">Go back</a>
 
-	<div id="clock">
-		<p id="hour"></p>
-		<div id="minute"></div>
-		<div id="second"></div>
+	<h1 id="name">Local time</h1>
 
+	<div class="clock">
+		<div class="clock-item" id="hour">12</div>
+		<p>:</p>
+		<div class="clock-item" id="minute">12</div>
+		<p>:</p>
+		<div class="clock-item" id="second">12</div>
 	</div>
-
-	<script>
-		var name = prompt("Hello, What is your name?");
-		document.getElementById("name").innerHTML = "Hello " + " " + name + " !";
-		function playtime() {
-
-
-			var date = new Date();
-			var hours = date.getHours();
-			var mns = date.getMinutes();
-			var secs = date.getSeconds();
-
-			if (hours > 12) {
-				hours -= 12;
-				document.getElementById("hour").innerHTML = "0" + hours + " :";
-			}
-			else {
-				document.getElementById("hour").innerHTML = hours + " :";
-			}
-			if (mns < 10) {
-				document.getElementById("minute").innerHTML = "0" + mns + " :";
-			}
-			else {
-				document.getElementById("minute").innerHTML = mns + ":";
-			}
-
-			if (secs < 10) {
-				document.getElementById("second").innerHTML = " 0" + secs;
-			}
-			else {
-				document.getElementById("second").innerHTML = " " + secs;
-			}
-
-
-		}
-		setInterval(playtime, 100);
-
-	</script>
-
-
 
 </body>
 

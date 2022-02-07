@@ -1,0 +1,112 @@
+@charset "UTF-8";
+html {
+	cursor: url("images/cursor.png"), auto;
+	background-color: #ffffff;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='600' y1='25' x2='600' y2='777'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FAF9F6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='650' y1='25' x2='650' y2='777'%3E%3Cstop offset='0' stop-color='%23fffefe'/%3E%3Cstop offset='1' stop-color='%23f3f2ee'/%3E%3C/linearGradient%3E%3ClinearGradient id='c' gradientUnits='userSpaceOnUse' x1='700' y1='25' x2='700' y2='777'%3E%3Cstop offset='0' stop-color='%23fefefd'/%3E%3Cstop offset='1' stop-color='%23ebeae6'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' gradientUnits='userSpaceOnUse' x1='750' y1='25' x2='750' y2='777'%3E%3Cstop offset='0' stop-color='%23fefdfd'/%3E%3Cstop offset='1' stop-color='%23e4e3de'/%3E%3C/linearGradient%3E%3ClinearGradient id='e' gradientUnits='userSpaceOnUse' x1='800' y1='25' x2='800' y2='777'%3E%3Cstop offset='0' stop-color='%23fdfdfc'/%3E%3Cstop offset='1' stop-color='%23dddcd6'/%3E%3C/linearGradient%3E%3ClinearGradient id='f' gradientUnits='userSpaceOnUse' x1='850' y1='25' x2='850' y2='777'%3E%3Cstop offset='0' stop-color='%23fdfcfb'/%3E%3Cstop offset='1' stop-color='%23d6d4ce'/%3E%3C/linearGradient%3E%3ClinearGradient id='g' gradientUnits='userSpaceOnUse' x1='900' y1='25' x2='900' y2='777'%3E%3Cstop offset='0' stop-color='%23fcfcfa'/%3E%3Cstop offset='1' stop-color='%23cecdc6'/%3E%3C/linearGradient%3E%3ClinearGradient id='h' gradientUnits='userSpaceOnUse' x1='950' y1='25' x2='950' y2='777'%3E%3Cstop offset='0' stop-color='%23fcfbf9'/%3E%3Cstop offset='1' stop-color='%23c7c5be'/%3E%3C/linearGradient%3E%3ClinearGradient id='i' gradientUnits='userSpaceOnUse' x1='1000' y1='25' x2='1000' y2='777'%3E%3Cstop offset='0' stop-color='%23fbfbf8'/%3E%3Cstop offset='1' stop-color='%23c0beb6'/%3E%3C/linearGradient%3E%3ClinearGradient id='j' gradientUnits='userSpaceOnUse' x1='1050' y1='25' x2='1050' y2='777'%3E%3Cstop offset='0' stop-color='%23fbfaf8'/%3E%3Cstop offset='1' stop-color='%23b9b7ae'/%3E%3C/linearGradient%3E%3ClinearGradient id='k' gradientUnits='userSpaceOnUse' x1='1100' y1='25' x2='1100' y2='777'%3E%3Cstop offset='0' stop-color='%23fafaf7'/%3E%3Cstop offset='1' stop-color='%23b1afa6'/%3E%3C/linearGradient%3E%3ClinearGradient id='l' gradientUnits='userSpaceOnUse' x1='1150' y1='25' x2='1150' y2='777'%3E%3Cstop offset='0' stop-color='%23FAF9F6'/%3E%3Cstop offset='1' stop-color='%23AAA89E'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg %3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' x='100' width='1100' height='800'/%3E%3Crect fill='url(%23c)' x='200' width='1000' height='800'/%3E%3Crect fill='url(%23d)' x='300' width='900' height='800'/%3E%3Crect fill='url(%23e)' x='400' width='800' height='800'/%3E%3Crect fill='url(%23f)' x='500' width='700' height='800'/%3E%3Crect fill='url(%23g)' x='600' width='600' height='800'/%3E%3Crect fill='url(%23h)' x='700' width='500' height='800'/%3E%3Crect fill='url(%23i)' x='800' width='400' height='800'/%3E%3Crect fill='url(%23j)' x='900' width='300' height='800'/%3E%3Crect fill='url(%23k)' x='1000' width='200' height='800'/%3E%3Crect fill='url(%23l)' x='1100' width='100' height='800'/%3E%3C/g%3E%3C/svg%3E");
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+#header {
+	display: block;
+	color: rgb(24, 23, 23);
+	text-align: center;
+	padding: 2px 2px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 350%;
+	text-shadow: 3px 3px 4px gray;
+	font-weight: normal;
+}
+
+ul {
+	margin:0 auto;
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	display:inline-block;
+}
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: rgb(2, 0, 20);
+	text-align: center;
+	padding: 8px 10px;
+	margin: 1px;
+	text-decoration: none;
+	font-size: 100%;
+	font-family: Century Gothic;
+	border: 1px solid rgb(252, 198, 97);
+	border-radius: 15px;
+	background-color: rgb(247, 245, 217);
+	cursor: pointer;
+	box-shadow: 3px 3px 15px gray;
+}
+li a:hover {
+	animation-name: hoverdance;
+	animation-duration: 0.5s;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+	animation-fill-mode: forwards;
+}
+li a:active {
+	transform: translate(1px, 1px);
+}
+@keyframes hoverdance {
+	100% {
+		border: 1px solid rgb(255, 182, 45);
+		background-color: rgb(255, 198, 107);
+	}
+}
+@media screen and (max-width: 550px) {
+	li a {
+		font-size: 75%;
+	}
+}
+
+.container{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.quote{
+	display:inline-block;
+	padding: 40px;
+	margin: 20px;
+	width: 480px;
+	quotes:'"' '"';
+	border-radius: 15px;
+	box-shadow: 5px 5px 10px gray, -5px -5px 10px white;
+	width:40%;
+	transition: .4s all;
+}
+.quote:hover{
+	transform: scale(1.05);
+}
+q{
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size:larger;
+}
+i{
+	display:block;
+	text-align: right;
+	padding:25px 0 0 0;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: larger;
+}
+
+@media all and (max-width:650px){
+	.quote{
+		width:90%;
+	}
+}
+
+@media all and (min-width: 2800px){
+	html{font-size: 40px;}
+	li a{padding:30px;}
+	li a{border-radius: 40px;}
+	.quote{padding:80px; border-radius: 30px;}
+}

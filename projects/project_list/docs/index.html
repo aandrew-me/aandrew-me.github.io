@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Docs</title>
+    <!-- To be removed -->
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3601/3601157.png" type="image/x-icon">
+</head>
+
+<body>
+    <img onclick="toggle()" class="toggle" src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="toggle">
+
+    <a href="#top"><img class="top" src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="up"></a>
+
+    <!--###############-->
+    <!-- Navbar -->
+    <!--###############-->
+    <nav id="navbar">
+
+        <header class="nav-header">HTML Docs</header>
+        
+        <a class="nav-link" href="#What_is_HTML?">What is HTML?</a>
+        <a class="nav-link" href="#Example_Code">Example Code</a>
+        <a class="nav-link" href="#HTML_Basics">HTML Basics</a>
+        <a class="nav-link" href="#HTML_Elements">HTML Elements</a>
+        <a class="nav-link" href="#HTML_Attributes">HTML Attributes</a>
+        <a class="nav-link" href="#HTML_Headings">HTML Headings</a>
+        <a class="nav-link" href="#HTML_Paragraphs">HTML Paragraphs</a>
+        <a class="nav-link" href="#HTML_Styles">HTML Styles</a>
+        <a class="nav-link" href="#HTML_Formatting">HTML Formatting<a>  
+        <a class="nav-link" href="#HTML_Comments">HTML Comments</a>
+        <a class="nav-link" href="#HTML_Links">HTML Links</a>
+        <a class="nav-link" href="#HTML_Images">HTML Images</a>        
+        <a class="nav-link" href="#HTML_Lists">HTML Lists</a>
+    </nav>
+
+    <!--###############-->
+    <!-- Main Document -->
+    <!--###############-->
+    <main id="main-doc">
+        <section id="What_is_HTML?" class="main-section">
+            <header style="margin:0">What is HTML?</header>
+            <p>HTML is the standard markup language for creating Web pages.
+            </p>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language
+                </li>
+                <li>HTML is the standard markup language for creating Web pages
+                </li>
+                <li>HTML describes the structure of a Web page
+                </li>
+                <li>HTML consists of a series of elements
+                </li>
+                <li>HTML elements tell the browser how to display the content
+                </li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+                    link", etc.</li>
+            </ul>
+        </section>
+
+        <section id="Example_Code" class="main-section">
+            <header>Example Code</header>
+            <div class="codebox">
+                <code>
+                    <p>&lt;!DOCTYPE html&gt;</p>
+                    <p>&lt;<span class="code">html</span>&gt;</p>
+                    <p>&lt;<span class="code">head</span>&gt;</p>
+                    <p>&nbsp; &nbsp; &lt;<span class="code">title</span>&gt;Page Title&lt;/<span class="code">title</span>&gt;</p>
+                    <p>&lt;/<span class="code">head</span>&gt;</p>
+                    <p>&lt;<span class="code">body</span>&gt;</p>
+                    <p>&nbsp; &nbsp; &lt;<span class="code">h1</span>&gt;My</span> First Heading&lt;/<span class="code">h1</span>&gt;</p>
+                    <p>&nbsp; &nbsp; &lt;<span class="code">p</span>&gt;My first paragraph.&lt;/<span class="code">p</span>&gt;</p>
+                    <p>&lt;/<span class="code">body</span>&gt;</p>
+                    <p>&lt;/<span class="code">html</span>&gt;</p>
+                </code>
+            </div>
+        </section>
+
+        <section id="HTML_Basics" class="main-section">
+            <header>HTML Basics</header>
+            <p>All HTML documents must start with a document type declaration: <code
+                    class="inline-code">&lt;!DOCTYPE html&gt;</code>.</p>
+
+            <p>The HTML document itself begins with <code class="inline-code">&lt;html&gt;</code> and ends with <code
+                    class="inline-code">&lt;/html&gt;</code>.</p>
+
+            <p>The visible part of the HTML document is between <code class="inline-code">&lt;body&gt;</code> and <code
+                    class="inline-code">&lt;/body&gt;</code>.</p>
+        </section>
+
+        <section id="HTML_Elements" class="main-section">
+            <header>HTML Elements</header>
+            <p>The HTML <strong>element </strong>is everything from the start tag to the end tag:</p>
+
+            <p><code class="inline-code">&lt;tagname&gt;</code><span style="font-size:larger">Content goes here...</span><code class="inline-code">&lt;/tagname&gt;</code></p>
+            <p>Examples of some HTML elements:</p>
+            <p><code class="inline-code">&lt;h1&gt;</code>My First Heading<code class="inline-code">&lt;/h1&gt;</code></p>
+            <p><code class="inline-code">&lt;p&gt;</code>My first paragraph.<code class="inline-code">&lt;/p&gt;</code></p>
+        </section>
+
+        <section id="HTML_Attributes" class="main-section">
+            <header>HTML Attributes</header>
+            <ul>
+                <li>All HTML elements can have <strong>attributes</strong></li>
+                <li>Attributes provide <strong>additional information</strong> about elements
+                </li>
+                <li>Attributes are always specified in <strong>the start tag</strong>
+                </li>
+                <li>Attributes usually come in name/value pairs like: <strong>name="value"</strong>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="HTML_Headings" class="main-section">
+            <header>HTML Headings</header>
+            <p>HTML headings are defined with the <code class="inline-code">&lt;h1&gt;</code> to <code class="inline-code">&lt;h6&gt;</code> tags.</p>
+            <p><code class="inline-code">&lt;h1&gt;</code> defines the most important heading. <code class="inline-code">&lt;h6&gt;</code> defines the least important heading.</p>
+            <strong>Example</strong>
+            <div class="codebox">
+                <code>
+                    <p><span class="code">&lt;h1&gt;</span> Heading 1 <span class="code">&lt;/h1&gt;</span></p>
+                    <p><span class="code">&lt;h2&gt;</span> Heading 2 <span class="code">&lt;/h2&gt;</span></p>
+                    <p><span class="code">&lt;h3&gt;</span> Heading 3 <span class="code">&lt;/h3&gt;</span></p>
+                    <p><span class="code">&lt;h4&gt;</span> Heading 4 <span class="code">&lt;/h4&gt;</span></p>
+                    <p><span class="code">&lt;h5&gt;</span> Heading 5 <span class="code">&lt;/h5&gt;</span></p>
+                    <p><span class="code">&lt;h6&gt;</span> Heading 6 <span class="code">&lt;/h6&gt;</span></p>
+                </code>
+            </div>
+            <strong>Result</strong>
+            <div class="result">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+            </div>
+        </section>
+
+        <section id="HTML_Paragraphs" class="main-section">
+            <header>HTML Paragraphs</header>
+            <p>The HTML <code class="inline-code">&lt;p&gt;</code> element defines a paragraph.</p>
+            <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        </section>
+
+        <section id="HTML_Styles" class="main-section">
+            <header>HTML Styles</header>
+            <p>The HTML <code class="inline-code">style</code> attribute is used to add styles to an element, such as color, font, size, and more.</p>
+            <p>The <code class="inline-code">style</code> attribute has the following syntax:
+            </p>
+            <div class="codebox">
+                <p>&lt;<code class="code">tagname</code> <span style="color:rgb(204, 79, 204)">style</span>=&quot;<span style="color:rgb(12, 184, 12);font-style: italic;">property:value;</span>&quot;&gt;</p>
+            </div>
+
+        </section>
+        <section id="HTML_Formatting" class="main-section">
+            <header>HTML Formatting</header>
+            <p>HTML contains several elements for defining text with a special meaning.</p>
+            <p>Formatting elements were designed to display special types of text:
+            </p>
+            <div class="result">
+            <p><code class="inline-code">&lt;b&gt;</code> - Bold text</p>
+            <p><code class="inline-code">&lt;strong&gt;</code> - Important text</p>
+            <p><code class="inline-code">&lt;i&gt;</code> - Italic text</p>
+            <p><code class="inline-code">&lt;em&gt;</code> - Emphasized text</p>
+            <p><code class="inline-code">&lt;mark&gt;</code> - Marked text</p>
+            <p><code class="inline-code">&lt;small&gt;</code> - Smaller text</p>
+            <p><code class="inline-code">&lt;del&gt;</code> - Deleted text</p>
+            <p><code class="inline-code">&lt;ins&gt;</code> - Inserted text</p>
+            <p><code class="inline-code">&lt;sub&gt;</code> - Subscript text</p>
+            <p><code class="inline-code">&lt;sup&gt;</code> - Superscript text</p>
+        </div>
+        </section>
+
+
+        <section id="HTML_Comments" class="main-section">
+            <header>HTML Comments</header>
+            <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+            <p>You can add comments to your HTML source by using the following syntax:</p>
+            <div class="codebox">
+                <p>&lt;!-- Write your comments here --&gt;</p>
+            </div>
+        </section>
+
+        <section  id="HTML_Links" class="main-section">
+            <header>HTML Links</header>
+            <p>HTML links are hyperlinks.</p>
+            <p>You can click on a link and jump to another document.</p>
+            <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+            <p>The HTML <code class="inline-code">&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax.</p>
+            <div class="codebox">
+                <p>&lt;<span class="code">a</span> href="url"&gt;<i>link text</i>&lt;/<span class="code">a</span>&gt;</p>
+            </div>
+            <p>The most important attribute of the <code class="inline-code">&lt;a&gt;</code> element is the <code class="inline-code">href</code> attribute, which indicates the link's destination.</p>
+            <p>The <i>link text</i> is the part that will be visible to the reader.
+            </p>
+            <p>Clicking on the link text, will send the reader to the specified URL address.
+            </p>
+        </section>
+
+        <section id="HTML_Images" class="main-section">
+            <header>HTML Images</header>
+            <p>Images can improve the design and the appearance of a web page.
+            </p>
+            <p>The HTML  tag is used to embed an image in a web page.</p>
+            <p>Images are not technically inserted into a web page; images are linked to web pages. The <code class="inline-code">&lt;img&gt;</code> tag creates a holding space for the referenced image.
+            </p>
+            <p>The <code class="inline-code">&lt;img&gt;</code> tag is empty, it contains attributes only, and does not have a closing tag.</p>
+            <strong>Syntax</strong>
+            <div class="codebox">
+                <p><span class="code">&lt;img</span> <span style="color:rgb(184, 41, 184)">src</span>="url" <span style="color:rgb(173, 39, 173)">alt</span>="alternatetext"<span class="code">&gt;</span></p>
+            </div>
+        </section>
+
+        <section id="HTML_Lists" class="main-section">
+            <header>HTML Lists</header>
+            <p>HTML lists allow web developers to group a set of related items in lists.</p>
+            <h3>1.Unordered lists</h3>
+            <strong>Example</strong>
+            <div class="codebox">
+                <p>&lt;<span class="code">ul</span>&gt;</p>
+                <p>&emsp;&emsp;&lt;<span class="code">li</span>&gt;Coffee&lt;/<span class="code">li</span>&gt;</p>
+                <p>&emsp;&emsp;&lt;<span class="code">li</span>&gt;Tea&lt;/<span class="code">li</span>&gt;</p>
+                <p>&emsp;&emsp;&lt;<span class="code">li</span>&gt;Milk&lt;/<span class="code">li</span>&gt;</p>
+                <p>&lt;/<span class="code">ul</span>&gt;</p>
+            </div>
+            <strong>Result</strong>
+            <div class="result">
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                  </ul>
+            </div>
+            <h3>2.Ordered lists</h3>
+            <strong>Example</strong>
+            <div class="codebox">
+                <p>&lt;<span class="code">ol</span>&gt;</p>
+                <p>&emsp;&emsp;&lt;<span class="code">li</span>&gt;Coffee&lt;/<span class="code">li</span>&gt;</p>
+                <p>&emsp;&emsp;&lt;<span class="code">li</span>&gt;Tea&lt;/<span class="code">li</span>&gt;</p>
+                <p>&emsp;&emsp;&lt;<span class="code">li</span>&gt;Milk&lt;/<span class="code">li</span>&gt;</p>
+                <p>&lt;/<span class="code">ol</span>&gt;</p>
+            </div>
+            <div class="result">
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                  </ol>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

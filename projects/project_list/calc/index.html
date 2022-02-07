@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="/projects/project_images/calculator.jpg" />
+    <script src="calc.js" defer></script>
+  </head>
+  <body>
+    <a class="back" href="/projects/#calculator">Back</a>
+    
+    <div class="container">
+      <div id="calc" class="calc">
+        <div id="screen" class="screen" onclick="copy()"></div>
+
+        <button class="ac" onclick="clearScreen()">AC</button>
+        <button onclick="del()">DEL</button>
+        <button onclick="operation('÷')">÷</button>
+
+        <button onclick="addToScreen(1)">1</button
+        ><button onclick="addToScreen(2)">2</button
+        ><button onclick="addToScreen(3)">3</button
+        ><button onclick="operation('*')">*</button>
+
+        <button onclick="addToScreen(4)">4</button
+        ><button onclick="addToScreen(5)">5</button
+        ><button onclick="addToScreen(6)">6</button
+        ><button onclick="operation('+')">+</button>
+
+        <button onclick="addToScreen(7)">7</button
+        ><button onclick="addToScreen(8)">8</button
+        ><button onclick="addToScreen(9)">9</button
+        ><button onclick="operation('-')">-</button>
+
+        <button class="dot" onclick="addToScreen('.')">.</button
+        ><button onclick="addToScreen(0)">0</button
+        ><button class="equal" onclick="process()">=</button>
+      </div>
+    </div>
+  </body>
+</html>

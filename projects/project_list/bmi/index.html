@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="shortcut icon" href="/projects/project_images/bmi.jpg" type="image/x-icon">
+</head>
+
+<body>
+    <h1>BMI Calculator </h1>
+
+    <section id="box">
+
+        <!-- Weight part starts -->
+
+        <p class="labels">Enter your weight</p>
+        <!-- Selecting weight units -->
+        <select name="weight" id="weight_select">
+            <option value="kg" selected>Kilograms</option>
+            <option value="pound">Pounds</option>
+        </select>
+
+        <!-- Input kg/pound -->
+        <input id="weight" type="number" placeholder="Weight (kg)" required autocomplete="auto">
+
+        <!-- Weight part ends -->
+
+
+        <!-- Height part starts -->
+
+        <p class="labels">Enter your height</p>
+
+        <select name="height" id="height_select">
+            <option value="cm" selected>Centimetres</option>
+            <option value="feet">Feet</option>
+        </select>
+        <!-- Input cm/feet -->
+        <input id="height" type="number" placeholder="Height (cm)" required>
+        <!-- Input Inches -->
+        <input class="inches-hidden" type="number" id="inches" placeholder="Inches">
+
+        <!-- Height part ends -->
+
+        <button onclick="calculate_bmi()" class="calculate">
+            Calculate</button>
+
+        <section class="bmi">
+            <p id="bmi_text"></p>
+            <p id="bmi_description"></p>
+        </section>
+    </section>
+</body>
+
+</html>

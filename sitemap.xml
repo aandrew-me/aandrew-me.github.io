@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://aandrew.me/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/photography/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/index.html</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/converter/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/tic_tac_toe/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/calc/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/bmi/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/quotes/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/clock/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/landing_page/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/docs/</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/tic_tac_toe/game.html</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>https://aandrew.me/projects/project_list/tic_tac_toe/index.html</loc>
+  <lastmod>2022-02-07T16:59:10+00:00</lastmod>
+  <priority>0.41</priority>
+</url>
+
+
+</urlset>

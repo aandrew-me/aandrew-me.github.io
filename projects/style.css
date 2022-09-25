@@ -14,7 +14,7 @@ body{
     transition:.4s all;
 }
 .back:hover{
-    transform: scale(1.2);
+    scale: 1.2;
 }
 .back-link{
     color:white;
@@ -54,7 +54,7 @@ main{
 }
 .card:hover{
     filter:saturate(120%);
-    transform:scale(1.05);
+    scale: 1.05;
 }
 .card-top{
     width:100%;

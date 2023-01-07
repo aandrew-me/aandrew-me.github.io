@@ -1,7 +1,8 @@
 body{
     margin:0;
     padding:20px;
-    background:radial-gradient(rgb(238, 234, 234),rgb(202, 243, 243)) fixed;
+    background:radial-gradient(rgb(238, 234, 234),rgb(203, 251, 237)) fixed;
+    scroll-behavior: smooth;
 }
 .back{
     position:absolute;

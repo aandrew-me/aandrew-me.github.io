@@ -1,7 +1,7 @@
 body{
     margin:0;
     padding:20px;
-    background:radial-gradient(rgb(238, 234, 234),rgb(203, 251, 237)) fixed;
+    background:linear-gradient(rgb(240, 240, 240),rgb(203, 251, 209)) fixed;
     scroll-behavior: smooth;
 }
 .back{

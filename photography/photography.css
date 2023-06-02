@@ -111,6 +111,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	font-family: sans-serif;
 }
 
 @media screen and (max-width: 500px) {

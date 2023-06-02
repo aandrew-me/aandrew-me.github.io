@@ -61,7 +61,8 @@ html{
 
 body {
 	background-color: #8ec5fc;
-	background-image: linear-gradient(62deg, #8ec5fc 25%, #e0c3fc 89%);
+	/* background-image: linear-gradient(62deg, #8ec5fc 25%, #e0c3fc 89%); */
+	background-image: linear-gradient(62deg, #85BEF5 25%, #237aad 89%);
 	background-attachment: fixed;
 	margin: 0px;
 }
